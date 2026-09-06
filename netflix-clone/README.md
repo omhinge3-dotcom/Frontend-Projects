@@ -1,6 +1,6 @@
-# Amazon Clone
+# Netflix Clone
 
-A frontend clone of the Amazon website created from scratch to practice and demonstrate HTML and CSS skills.
+A frontend clone of the Netflix landing page created from scratch using HTML and CSS.
 
 ## Technologies Used
 
@@ -9,13 +9,14 @@ A frontend clone of the Amazon website created from scratch to practice and demo
 
 ## Features
 
-- Amazon-style navigation bar
-- Product sections
-- Product cards
-- Images and banners
-- Responsive layout
+- Netflix-style navigation bar
+- Hero section
+- Email input and Get Started button
+- TV and streaming sections
+- FAQ section
 - Footer section
+- Responsive design
 
 ## Purpose
 
-This project was created as a frontend practice project to improve my skills in HTML, CSS, and responsive web design.
+This project was created to practice HTML, CSS, Flexbox, responsive design, and frontend development.
