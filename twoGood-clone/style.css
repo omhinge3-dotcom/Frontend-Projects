@@ -1,0 +1,626 @@
+@font-face {
+    font-family: "Futura";
+    src: url("./fonts/Futura-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+*::selection {
+    background-color: black;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 13px;
+    background-color: #F7F7F7;
+}
+
+#nav {
+    position: fixed;
+    top: 22px;
+    left: 22px;
+    right: 22px;
+
+
+    /* background-color: burlywood; */
+    z-index: 99;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+#nav #nav-part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#links {
+    padding: 10px;
+}
+
+#nav-part1 {
+    height: 83px;
+    width: 106px;
+    overflow: hidden;
+    position: relative;
+}
+
+#nav-part1 svg {
+    display: block;
+}
+
+#nav-part2 #links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0 25px;
+    font-family: "Helvetica";
+}
+
+#icons {
+    padding: 10px;
+    border-radius: 50px;
+
+    background-color: #F7F7F7;
+}
+
+#nav-part2 #icons i {
+    font-size: 22px;
+    margin: 0 20px;
+    font-weight: 80;
+}
+
+#cursor {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(196, 230, 205, 0.5);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+#page1 {
+    min-height: 70vh;
+    position: relative;
+    width: 100%;
+
+    padding-top: 261px;
+
+}
+
+#page1 h1 {
+    font-size: 15vw;
+    text-transform: uppercase;
+    font-family: "Futura", sans-serif;
+    line-height: 28vh;
+    letter-spacing: -7px;
+}
+
+#video-container {
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+    margin-top: 1vw;
+    position: relative;
+}
+
+#video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #play {
+    padding: 3vw 2.3vw;
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    position: fixed;
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-family: "Futura", sans-serif;
+    opacity: 0;
+    scale: 0;
+}
+
+#slog {
+    font-family: "Futura";
+    font-size: 63px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 150px 0 70px;
+}
+
+#qoute {
+    display: flex;
+    justify-content: space-between;
+}
+
+#qoute p {
+    text-transform: uppercase;
+    font-family: "Helvetica";
+    font-size: 12px;
+
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 2vw 1vw;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#page2 .elem {
+    height: 100%;
+    width: 30%;
+    position: relative;
+    /* background-color: red; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page2 .elem img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    scale: 1.1;
+}
+
+#page2 .elem .dets {
+    height: 60px;
+    border-radius: 50PX;
+    width: 70%;
+    position: absolute;
+    z-index: 9;
+    background-color: rgb(231, 229, 204);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 30px;
+}
+
+#page2 .elem .dets i {
+    font-size: 11px;
+
+}
+
+#page2 .elem .dets p {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Helvetica";
+}
+
+#page2 .elem .dets .bold {
+    font-weight: 750;
+}
+
+#message {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+
+}
+
+#message #leftmsg p {
+    font-family: "Futura";
+    font-size: 56px;
+    text-transform: uppercase;
+    line-height: 53px;
+}
+
+#message #rightmsg {
+    width: 330px;
+    margin-right: 128px;
+}
+
+#message #rightmsg p {
+    font-size: 16px;
+    font-family: "Helvetica";
+    line-height: 27px;
+    letter-spacing: 0.5px;
+}
+
+#message #rightmsg #msg {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "Helvetica";
+    width: 330px;
+}
+
+#message #rightmsg #smline {
+    width: 150px;
+
+}
+
+#smline hr {
+    border: none;
+    border-top: 1px solid black;
+
+}
+
+#page3 {
+    min-height: 120vh;
+    width: 100%;
+    margin: 100px 0;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+
+    row-gap: 13vh;
+}
+
+.child {
+    height: auto;
+    width: 40vw;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.child img {
+    height: 68vh;
+    width: auto;
+
+    display: block;
+}
+
+.child p {
+    margin-top: 70px;
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    text-align: center;
+}
+
+.child span {
+    font-size: 12px;
+}
+
+#page3 .child p {
+    font-family: "Helvetica";
+    text-transform: uppercase;
+}
+
+#page4 {
+    min-height: 70vh;
+    width: 100%;
+    /* margin: 100px 0; */
+}
+
+#page4 #qoute {
+    display: flex;
+    justify-content: space-between;
+}
+
+#page4 #qoute p {
+    text-transform: uppercase;
+    font-family: "Helvetica";
+    font-size: 12px;
+}
+
+#page4 #feedback {
+    text-align: center;
+    padding-top: 150px;
+}
+
+#page4 #feedback button {
+    height: 58px;
+    width: 310px;
+    background-color: black;
+    color: white;
+    font-family: "Helvetica";
+    border-radius: 50px;
+    border: none;
+}
+
+#page4 #feedback p {
+    padding-top: 35px;
+    font-family: "Helvetica";
+    font-weight: 200;
+
+}
+
+#page4 #qoute .big {
+    font-family: "Futura";
+    font-size: 36px;
+}
+
+
+
+#page5 {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 24px 40px 24px;
+    box-sizing: border-box;
+}
+
+/* LEFT FOOTER */
+#footer1 {
+    width: 25%;
+    align-self: flex-start;
+}
+
+#footer1 p {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+#footer1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer1 li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+
+/* CENTER LOGO */
+#footer2 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#two2 {
+    width: 220px;
+    height: auto;
+}
+
+#nav-part1 svg {
+    width: 106px;
+    height: 83px;
+}
+
+
+/* RIGHT FOOTER */
+#footer3 {
+    width: 25%;
+    text-align: right;
+    align-self: flex-start;
+}
+
+#footer3 p {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+#footer3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer3 li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+#page6 {
+    height: 100px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#final {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#page6 span {
+    color: gray;
+    font-family: "Helvetica";
+    text-transform: uppercase;
+    font-size: 11px;
+
+}
+
+
+
+
+@media (max-width : 600px) {
+
+    #nav {
+        position: fixed;
+        padding: 15px;
+
+        /* background-color: burlywood; */
+        z-index: 99;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        padding-right: 40px;
+        box-sizing: border-box;
+    }
+
+    #nav #nav-part2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #links {
+        padding: 10px;
+        display: none;
+    }
+
+    #nav-part1 {
+        height: 62px;
+        width: 106px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #nav-part1 svg {
+        display: block;
+        height: 63px;
+        width: 80px;
+    }
+
+    #nav #two2 {
+        height: 40px;
+        margin-left: -20px;
+    }
+
+    #icons {
+        padding: 10px;
+        border-radius: 50px;
+
+        background-color: #F7F7F7;
+    }
+
+    #nav-part2 #icons i {
+        font-size: 15px;
+        margin: 0 20px;
+        font-weight: 80;
+    }
+
+    #page1 {
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 20vh;
+    }
+
+    #page1 h1 {
+        font-size: 12vw;
+        line-height: 10vh;
+        letter-spacing: -3px;
+    }
+
+    #video-container {
+        height: 25vh;
+        margin-top: 3vw;
+
+    }
+
+    #video-container video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #video-container #play {
+        padding: 9.5vw 7.2vw;
+        font-size: 4.5vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    #page2 {
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 5vw 3vw;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    #page2 .elem {
+        height: 100vh;
+        width: 100%;
+        /* background-color: red; */
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+
+    #page2 .elem .dets {
+        height: 40px;
+        border-radius: 50PX;
+        width: 70%;
+        position: absolute;
+        z-index: 9;
+        background-color: palegoldenrod;
+    }
+
+
+    #page3 {
+        min-height: 120vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        flex-wrap: wrap;
+        row-gap: 40vh;
+    }
+
+    .child {
+        height: 68vh;
+        width: 88vw;
+        position: relative;
+        padding: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .child img {
+        height: 100%;
+
+    }
+
+
+
+
+
+}
