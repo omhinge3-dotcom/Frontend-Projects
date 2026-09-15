@@ -196,7 +196,7 @@ body {
 #page2 .elem .dets {
     height: 60px;
     border-radius: 50PX;
-    width: 70%;
+    width: 80%;
     position: absolute;
     z-index: 9;
     background-color: rgb(231, 229, 204);
